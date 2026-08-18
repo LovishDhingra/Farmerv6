@@ -41,7 +41,7 @@ async function generateWithGroq(prompt: string, systemPrompt: string): Promise<s
       "Content-Type": "application/json",
     },
     body: JSON.stringify({
-      model: "llama-3.3-70b-versatile",
+      model: "qwen/qwen3.6-27b",
       messages: [
         { role: "system", content: systemPrompt },
         { role: "user", content: prompt }
