@@ -41,7 +41,7 @@ async function generateWithGroq(prompt: string, systemPrompt: string): Promise<s
       "Content-Type": "application/json",
     },
     body: JSON.stringify({
-      model: "qwen/qwen3.6-27b",
+      model: "openai/gpt-oss-120b",
       messages: [
         { role: "system", content: systemPrompt },
         { role: "user", content: prompt }
